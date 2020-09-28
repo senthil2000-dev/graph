@@ -1,0 +1,79 @@
+
+#container {
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    font-weight: 600;
+}
+.toolBar {
+    width: 100%;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+.toolBar input {
+    margin-left: 1.5vw;
+    width: 40vw;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1.5px solid green;
+}
+#btnStyle {
+    background: #4CAF50;
+    border: none;
+    color: white;
+    padding: 0 20px;
+    margin-left: 2vw;
+    border-radius: 5%;
+}
+
+#btnStyle:hover {
+    background-color: blue;
+}
+#plotArea {
+    flex: 1;
+    margin-top: 1vh;
+    display: flex;
+}
+#column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: slateblue;
+}
+
+#sheet {
+    flex: 3;
+}
+#canvas {
+    width: 100%;
+    height: 100%;
+}
+.item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    justify-content: center;
+    font-size: 2rem;
+    border: 2px solid darkblue;
+}
+#specialFunc {
+    margin: 0 0.5vw;
+    width: 12vw;
+}
+
+#zoom {
+    height: 5vh;
+    width: 10vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.item img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2vw;
+    width: 2vw;
+}

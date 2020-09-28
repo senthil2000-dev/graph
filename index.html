@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Desmos</title>
+    <link rel="icon" type="image/png" href="desmos.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="toolBar">
+            <span>Special functions:</span>
+            <select name="special" id="specialFunc">
+                <option value="0">none</option>
+                <option value="1">sin</option>
+                <option value="2">cos</option>
+                <option value="3">tan</option>
+                <option value="4">log</option>
+                <option value="5">abs</option>
+            </select>
+            <label for="inputStr">Enter your function: </label>
+            <input id="inputStr" type="text" placeholder="independent variable must be x (no spaces allowed)"><br>
+            <button onclick="plot()" id="btnStyle">PLOT FUNCTION</button>
+        </div>
+        <div id="plotArea">
+            <div id="column">
+
+            </div>
+            <div id="sheet">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
